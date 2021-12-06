@@ -165,18 +165,19 @@ input, label, span .menu, .menu > .mobile{
   }
 
  
-   h3{
-     text-align: center;
-     padding-top: 200px;
-  }
-  .why{
+  h3{
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 180px;
-  }
+    padding-top: 200px;
+ }
+ .why{
+   text-align: center;
+   padding-top: 40px;
+   padding-bottom: 80px;
+ }
 
   .picture {
     justify-content: center;
+    padding-top: 100px;
   }
   
   .picture >ul >li{
@@ -185,9 +186,11 @@ input, label, span .menu, .menu > .mobile{
     display: flex;
     float: left;
     padding-bottom: 50px;
-    padding-left: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 16%;
+    width: 16%;
+  }
+  .picture > ul >li >img{
+    border-radius: 1000px;
   }
   /* .pages >a {
     width: 100%;
