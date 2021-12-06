@@ -4,6 +4,8 @@ input, label, span .menu, .menu > .mobile{
   display: none;
 }
 *{
+  top: 0;
+  margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -24,7 +26,7 @@ input, label, span .menu, .menu > .mobile{
       max-width: 0;
       transition: 0.5s ease;
       z-index: 1;
-      background-color: #eee;
+      background-color: rgb(247, 247, 247);
     }
   .menu > div {
       text-align: center;
@@ -107,64 +109,54 @@ input, label, span .menu, .menu > .mobile{
   
 
   .top{
-    top:0;
-    margin: 0;
+    width: 100%;
     display: flex;
-    /* box-sizing: border-box; */
   }
   /* 로고 */
   .logo{
+    font-weight: 600;
+    font-size: 25px;
       margin-top: 15px;
       margin-left: 20px;
       cursor: pointer;
-      /* color: rgb(255, 255, 255); */
-     /* text-shadow: 2px 2px 2px gray; */
       
   }
   /* 로고 끝 */
 
   .mainmenu{
-    margin-top: 0px;
-    margin-left: 450px;
+    margin: 0 auto;
     text-align: center;
     justify-content: center;
   }
   
   .mainmenu > ul > li{
-    /* color: goldenrod; */
+    position: relative;
     font-weight: 600;
     cursor: pointer;
+    left: -60px;
     text-align: center;
-    margin: 0 50px;
-    margin-top: 10px;
+    margin: 0 55px;
+    margin-top: 30px;
     font-size: 18px;
     display: flex;
     float: left;
-    justify-content: space-between;
-    box-sizing: border-box;
+
+    
     
   }
 
   .mainmenu > ul > li:hover{
     color:darkslategray
-    /* text-decoration: rgba(242, 248, 159, 0.514); */
-    /* text-decoration: rgb(63, 63, 63); */
-    /* text-decoration-line:underline; */
-    /* text-decoration-style:wavy; */
   }
 
-  div{
-    /* top: 120px; */
-  }
-   h2{
+ 
+   h3{
      text-align: center;
      padding-top: 120px;
-     /* color: white;
-     text-shadow: 2px 2px 2px gray; */
   }
   .why{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 140px;
   }
 
@@ -177,7 +169,7 @@ input, label, span .menu, .menu > .mobile{
     margin: 40px 0 0;
     padding: 40px 0 0;
     font-size: 18px;
-    border-top: 8px dashed #eee;
+    border-top: 5px dashed rgb(190, 189, 189);
     text-align: center;
 }
 .like-content span {
@@ -188,7 +180,6 @@ input, label, span .menu, .menu > .mobile{
     display: block;
     margin: 40px auto 0px;
     text-align: center;
-    /* background: #ed2553; */
     background: black;
     border-radius: 3px;
     box-shadow: 0 10px 20px -8px rgb(92, 92, 92);
