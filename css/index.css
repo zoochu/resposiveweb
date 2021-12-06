@@ -191,6 +191,7 @@ input, label, span .menu, .menu > .mobile{
   }
   .picture > ul >li >img{
     border-radius: 1000px;
+    width: 200px;
   }
   /* .pages >a {
     width: 100%;
