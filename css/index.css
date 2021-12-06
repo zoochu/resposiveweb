@@ -1,0 +1,221 @@
+
+/* 버거메뉴 시작 */
+input, label, span .menu, .menu > .mobile{
+  display: none;
+}
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media (max-width:1250px) {
+  .top, .log, .mainmenu {
+    display: none;
+  }
+  
+  input, label, span .menu, .menu > .mobile{
+    display: block;
+  }
+
+  .menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      max-width: 0;
+      transition: 0.5s ease;
+      z-index: 1;
+      background-color: #eee;
+    }
+  .menu > div {
+      text-align: center;
+      margin-top: 200px;
+      font-size: 20px;
+      font-weight: 600;
+      
+  }
+  .mobile > div{
+    padding-top: 20px;
+  }
+    
+    .burger-icon {
+      cursor: pointer;
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      padding: 30px 30px;
+      top: 4px;
+      right: 4px;
+      user-select: none;
+      width: auto;
+      margin: 0;
+    }
+    
+    .burger-icon .burger-sticks {
+      background: #333;
+      display: block;
+      height: 3px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 30px;
+    }
+    
+    .burger-icon .burger-sticks:before,
+    .burger-icon .burger-sticks:after {
+      background: #333;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+    
+    .burger-icon .burger-sticks:before {
+      top: 10px;
+    }
+    
+    .burger-icon .burger-sticks:after {
+      top: -10px;
+    }
+    
+    .burger-check {
+      display: none;
+    }
+    
+    .burger-check:checked~.menu {
+      max-width: 200px;
+    }
+    
+    .burger-check:checked~.burger-icon .burger-sticks {
+      background: transparent;
+    }
+    
+    .burger-check:checked~.burger-icon .burger-sticks:before {
+      transform: rotate(-45deg);
+    }
+    
+    .burger-check:checked~.burger-icon .burger-sticks:after {
+      transform: rotate(45deg);
+    }
+    
+    .burger-check:checked~.burger-icon:not(.steps) .burger-sticks:before,
+    .burger-check:checked~.burger-icon:not(.steps) .burger-sticks:after {
+      top: 0;
+    }
+}
+  /* 버거메뉴 끝 */
+  
+
+  .top{
+    top:0;
+    margin: 0;
+    display: flex;
+    /* box-sizing: border-box; */
+  }
+  /* 로고 */
+  .logo{
+      margin-top: 15px;
+      margin-left: 20px;
+      cursor: pointer;
+      /* color: rgb(255, 255, 255); */
+     /* text-shadow: 2px 2px 2px gray; */
+      
+  }
+  /* 로고 끝 */
+
+  .mainmenu{
+    margin-top: 0px;
+    margin-left: 450px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .mainmenu > ul > li{
+    /* color: goldenrod; */
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 50px;
+    margin-top: 10px;
+    font-size: 18px;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+  }
+
+  .mainmenu > ul > li:hover{
+    color:darkslategray
+    /* text-decoration: rgba(242, 248, 159, 0.514); */
+    /* text-decoration: rgb(63, 63, 63); */
+    /* text-decoration-line:underline; */
+    /* text-decoration-style:wavy; */
+  }
+
+  div{
+    /* top: 120px; */
+  }
+   h2{
+     text-align: center;
+     padding-top: 120px;
+     /* color: white;
+     text-shadow: 2px 2px 2px gray; */
+  }
+  .why{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 140px;
+  }
+
+
+
+  /* 퍼옴 */
+  .like-content {
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0 0;
+    padding: 40px 0 0;
+    font-size: 18px;
+    border-top: 8px dashed #eee;
+    text-align: center;
+}
+.like-content span {
+  color: #949499;
+  font-family: monospace;
+}
+.like-content .btn-secondary {
+    display: block;
+    margin: 40px auto 0px;
+    text-align: center;
+    /* background: #ed2553; */
+    background: black;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgb(92, 92, 92);
+    padding: 10px 17px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.like-content .btn-secondary:hover {
+    transform: translateY(-3px);
+}
+.like-content .btn-secondary .fa {
+    margin-right: 5px;
+}
+.animate-like {
+  animation-name: likeAnimation;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.65s;
+}
+@keyframes likeAnimation {
+  0%   { transform: scale(30); }
+  100% { transform: scale(1); }
+}
+  
