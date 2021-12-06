@@ -37,6 +37,11 @@ input, label, span .menu, .menu > .mobile{
   }
   .mobile > div{
     padding-top: 20px;
+    
+  }
+  .mobile > div > a{
+    text-decoration: none;
+    color: black;
   }
     
     .burger-icon {
@@ -112,14 +117,17 @@ input, label, span .menu, .menu > .mobile{
     width: 100%;
     display: flex;
   }
+  .top > p{
+    margin-top: 20px;
+  }
   /* 로고 */
   .logo{
     font-weight: 600;
     font-size: 25px;
-      margin-top: 15px;
       margin-left: 20px;
       cursor: pointer;
-      
+      text-decoration: none;
+      color: black;
   }
   /* 로고 끝 */
 
@@ -127,9 +135,11 @@ input, label, span .menu, .menu > .mobile{
     margin: 0 auto;
     text-align: center;
     justify-content: center;
+    text-decoration: none;
+    color: black;
   }
   
-  .mainmenu > ul > li{
+  .mainmenu > ul > li {
     position: relative;
     font-weight: 600;
     cursor: pointer;
@@ -140,13 +150,18 @@ input, label, span .menu, .menu > .mobile{
     font-size: 18px;
     display: flex;
     float: left;
-
     
-    
+  
+  }
+  .mainmenu > ul > li >a{
+    text-decoration: none;
+    color: black;
   }
 
   .mainmenu > ul > li:hover{
-    color:darkslategray
+    color:darkslategray;
+    text-decoration: none;
+    color: black;
   }
 
  
@@ -160,6 +175,7 @@ input, label, span .menu, .menu > .mobile{
     padding-bottom: 140px;
   }
 
+  
 
 
   /* 퍼옴 */
